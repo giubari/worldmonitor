@@ -1,6 +1,11 @@
 {
   "ignoreCommand": "bash scripts/vercel-ignore.sh",
   "crons": [],
+  "functions": {
+    "api/**/*": {
+      "excludeFiles": "**/*"
+    }
+  },
   "redirects": [
     { "source": "/docs", "destination": "/docs/documentation", "permanent": false },
     { "source": "/security.txt", "destination": "/.well-known/security.txt", "permanent": true }
